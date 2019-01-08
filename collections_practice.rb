@@ -85,7 +85,7 @@ end
 
 def organize_schools(schools)
   new_hash = {}
-  schools.each do 
+  schools.each do
     |school_name, location_hash|
     new_array = []
     location_checker = location_hash[:location]
@@ -102,7 +102,7 @@ def organize_schools(schools)
   new_hash
 end
 
-school_hash = 
+school_hash =
       {
       "flatiron school bk" => {
         :location => "NYC"
@@ -127,7 +127,7 @@ school_hash =
 ##for each location, create a hash pointing to empty array
 #making sure that the locatio does not exist already
 ##then iterate through the original hash and push the name of the school with that location to the new hash
-    
+
 def organize_schools(school_hash)
   organized_hash = {}
   school_hash.each do |school_name, location_hash|
@@ -146,6 +146,6 @@ def organize_schools(school_hash)
   end
   organized_hash
 end
-    
+
 organize_schools(school_hash)
   
